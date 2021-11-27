@@ -23,7 +23,7 @@ https://www.kaggle.com/snathjr/kindle-books-dataset
 
 ## Librerias
 
-Las principales librerías que se utilizaron en este proyecto son AGREGAR LIBRERIAS
+Las principales librerías que se utilizaron en este proyecto son multimodal-transformers, la cual es la base para el modelo, kaggle para trabajar con las bases de datos; tambien utilizamos streamlit y gcsfs para la interfaz de usuario interactiva
 
 Toda la información referente a los requerimientos del ambiente estan presentes en el archivo requirements.txt, por lo que este se puede utilizar
 
@@ -35,3 +35,6 @@ pip install -r requirements.txt
 
 El desarrollo de este proyecto comenzó teniendo como base el tutorial de Georgian Partners para implementar un modelo multimodal, el cual esta presente en https://colab.research.google.com/github/georgianpartners/Multimodal-Toolkit/blob/master/notebooks/text_w_tabular_classification.ipynb
 
+## Innovación: Interfaz de Usuario Interactiva
+
+Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit
