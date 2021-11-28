@@ -62,6 +62,38 @@ Después estan presentes cuadros que muestran las graficas sobre información de
 
 El modelo utilizado es "Bert Base Uncased", utilizando como combinador de features "Gating on categorical and numerical features then sum", y con task de "Regresión"
 
+Se utiliza el tokenizer de HugginFace y los Datasets de Torch para introducir los datos en el modelo, al definirse el modelo se define el Trainer
+```python
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=val_dataset,
+    compute_metrics=calc_classification_metrics,
+)
+```
+El cual cuenta con una clase TrainingArgs definida como
+```python
+training_args = TrainingArguments(
+    output_dir="./logs/model_name",
+    logging_dir="./logs/runs",
+    overwrite_output_dir=True,
+    do_train=True,
+    do_eval=True,
+    per_device_train_batch_size=32,
+    num_train_epochs=1,
+    evaluate_during_training=True,
+    logging_steps=25,
+    eval_steps=250,
+)
+```
+
+Finalmente, para entrenar el modelo se utiliza la celda
+```python
+%%time
+trainer.train()
+```
+
 ## Innovación: Interfaz de Usuario Interactiva
 
 Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit
