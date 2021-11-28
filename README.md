@@ -94,6 +94,10 @@ Finalmente, para entrenar el modelo se utiliza la celda
 trainer.train()
 ```
 
+### Innovación
+
+Lo ultimo presente en el notebook es el codigo que genera la interfáz de usuario, la cual esta discrita en la siguiente sección
+
 ## Innovación: Interfaz de Usuario Interactiva
 
-Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit
+Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit, en esta se cuenta con unas cuantas funciones, como la visualización del set de datos utilizada, una busqueda de libros por calificación y un cuadro para poder predecir el exito de libros ingresados
