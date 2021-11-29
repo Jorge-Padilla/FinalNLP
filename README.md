@@ -23,7 +23,7 @@ https://www.kaggle.com/snathjr/kindle-books-dataset
 
 ## Librerias
 
-Las principales librerías que se utilizaron en este proyecto son multimodal-transformers, la cual es la base para el modelo, kaggle para trabajar con las bases de datos; tambien utilizamos streamlit y gcsfs para la interfaz de usuario interactiva
+Las principales librerías que se utilizaron en este proyecto son multimodal-transformers, la cual es la base para el modelo, kaggle para trabajar con las bases de datos; tambien utilizamos streamlit y pyngrok para la interfaz de usuario interactiva
 
 Toda la información referente a los requerimientos del ambiente estan presentes en el archivo requirements.txt, por lo que este se puede utilizar
 
@@ -100,4 +100,6 @@ Lo ultimo presente en el notebook es el codigo que genera la interfáz de usuari
 
 ## Innovación: Interfaz de Usuario Interactiva
 
-Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit, en esta se cuenta con unas cuantas funciones, como la visualización del set de datos utilizada, una busqueda de libros por calificación y un cuadro para poder predecir el exito de libros ingresados
+Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit, en esta se cuenta con unas cuantas funciones, como la visualización del set de datos utilizada, graicas del conjunto de datos, y un cuadro para poder predecir el exito de libros ingresados
+
+
