@@ -102,4 +102,26 @@ Lo ultimo presente en el notebook es el codigo que genera la interfáz de usuari
 
 Como innovación en este proyecto se imlpementó una Interfaz de Usuario mediante Streamlit, en esta se cuenta con unas cuantas funciones, como la visualización del set de datos utilizada, graicas del conjunto de datos, y un cuadro para poder predecir el exito de libros ingresados
 
+En las celdas de esta sección se encuentra una que utiliza un token de autorización de ngrok
+```python
+!ngrok authtoken 21VyDlHNMHpJnOQUi8DUEmuVGdC_7M3ftHqensEVH3ptai6gc
+```
 
+La key presente es de un Jorge Zavalza, por lo que puede utilizarse esta o (recomendado) puede utilizarse otra personal, en caso de que esta falle. De igual manera, si se llega a tener problemas en la parte del tunel en la siguiente celda
+```python
+public_url = ngrok.connect(port='8501')
+```
+
+Se puede correr el siguiente comando **Desde la misma sesión de colab**
+```bash
+!killall ngrok
+```
+
+Para tener un token personal y evitar problemas, se crea desde https://dashboard.ngrok.com/, puedes vincular tu cuenta de github. Al tener esta cuenta se obtiene en "2. Connect your account" la linea de comando con tu token
+
+Para abrir la interfáz, se corre la ultima celda, la cual brinda el sitio web de la interfaz de usuario
+```python
+public_url
+```
+
+En caso de tener un problema con el localhost, revisar que se tenga la version correcta de la libreria de ngrok
